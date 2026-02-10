@@ -166,6 +166,33 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       : frontmatter.image
     : `${siteUrl}/ech_full_logo_inverted.png`;
   
+  // Strip markdown syntax for clean description (same logic as in generateMetadata)
+  const plainText = content
+    .replace(/^#+\s+/gm, '') // Remove headers
+    .replace(/\*\*([^*]+)\*\*/g, '$1') // Remove bold
+    .replace(/\*([^*]+)\*/g, '$1') // Remove italic
+    .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1') // Remove links, keep text
+    .replace(/!\[([^\]]*)\]\([^\)]+\)/g, '') // Remove images
+    .replace(/`([^`]+)`/g, '$1') // Remove inline code
+    .replace(/```[\s\S]*?```/g, '') // Remove code blocks
+    .replace(/^\s*[-*+]\s+/gm, '') // Remove list markers
+    .replace(/^\s*\d+\.\s+/gm, '') // Remove numbered list markers
+    .replace(/\n+/g, ' ') // Replace newlines with spaces
+    .trim();
+  
+  const description = plainText.length > 160 
+    ? plainText.slice(0, 157).trim() + "..."
+    : plainText.trim();
+  
+  const keywords = [
+    "ECH Institute",
+    "Ethereum",
+    "EIP",
+    frontmatter.title,
+    ...(frontmatter.title.toLowerCase().includes("pectra") ? ["Pectra upgrade", "Ethereum upgrade"] : []),
+    ...(frontmatter.title.toLowerCase().includes("devconnect") ? ["Devconnect", "Ethereum conference"] : []),
+  ];
+  
   // SEO: Enhanced BlogPosting schema with Article properties for better search visibility
   const blogPostingSchema = {
     "@context": "https://schema.org",
