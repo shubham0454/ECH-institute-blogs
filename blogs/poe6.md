@@ -19,7 +19,7 @@ Welcome to the sixth edition of the Purr-suit of Ethereum! If you missed our las
 
 
 
-# [Pectra](https://www.ethcatherders.com/upgrades/pectra) (Prague+Electra) Upgrade
+# [Pectra](https://echinstitute.org/upgrades/pectra) (Prague+Electra) Upgrade
 - Devnet-6 is running smoothly, with the MEV workflow being tested end to end.
 - [PEEPanEIP - Pectra](https://www.youtube.com/playlist?list=PL4cwHXAawZxqOHV_F40AJbzcl8b6tG8xw)
 - [Holesky Pectra Upgrade Testnet Livestream](https://www.youtube.com/live/XfdDV0RhDyI)
@@ -186,6 +186,6 @@ Pectra has already been [activated](https://x.com/TMIYChao/status/18901362935245
 ### Share your project updates with us
 To add updates, visit our GitHub repository. If you wish to contact the team, join ECH's Discord. Alternatively, you can email us at pooja@ethcatherders.com by Friday to be added to the next edition of the newsletter scheduled for release on the following Monday.
 
-Remember to visit our [official website](https://www.ethcatherders.com/), [blogs](https://blog.ethcatherders.com/) and follow us on [Twitter](https://x.com/ethcatherders) & [Farcaster](https://warpcast.com/ethcatherders) for more updates.
+Remember to visit our [official website](https://echinstitute.org/), [blogs](https://blog.ethcatherders.com/) and follow us on [Twitter](https://x.com/ethcatherders) & [Farcaster](https://warpcast.com/ethcatherders) for more updates.
 
 ## Stay Curious, Stay Connected and Keep Purring 🐾

@@ -1,10 +1,10 @@
 {
-  "name": "ech-blogs",
+  "name": "ECH Institute Blog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node --max-old-space-size=4096 node_modules/next/dist/bin/next build",
     "start": "next start",
     "lint": "next lint",
     "validate-blogs": "bun scripts/validate-blog-posts.ts"

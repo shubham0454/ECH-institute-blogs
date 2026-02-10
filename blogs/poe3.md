@@ -12,7 +12,7 @@ In this edition, we bring you key highlights from the Ethereum ecosystem, includ
 Other highlights include exciting news about Ethereum Improvement Proposals (EIPs) in progress, updates on the Public Goods Funding, and upcoming events. Stay tuned for more updates as we continue our mission to empower Ethereum through education, community building, and innovation.
 
 
-## [Pectra](https://www.ethcatherders.com/upgrades/pectra) (Prague+Electra) Upgrade
+## [Pectra](https://echinstitute.org/upgrades/pectra) (Prague+Electra) Upgrade
 
 ### [Consensus (ACDC) #149](https://github.com/ethereum/pm/issues/1258), (January 23, 2025) 
 

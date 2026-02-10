@@ -94,7 +94,7 @@ Each step brought Ethereum closer to a more efficient, scalable, and secure dece
 ## 🏅 Author Recognition: Pectra Commemorative NFTs
 To recognize the invaluable contributions of EIP authors, Ethereum Cat Herders have launched a **special edition commemorative NFT** for those who contributed to the Pectra upgrade. Read more [here](https://hackmd.io/@georgeh/S1tPHHAuye).
 
-If you’ve authored one or more EIPs included in Pectra, you can[ claim your NFT here](https://www.ethcatherders.com/upgrades/pectra).
+If you’ve authored one or more EIPs included in Pectra, you can[ claim your NFT here](https://echinstitute.org/upgrades/pectra).
 
 To claim:
 - Verify your GitHub username (as cited in the EIP)
@@ -128,4 +128,4 @@ Special thanks to [Akash Kshirsagar](https://x.com/LookUpForSky) for beautiful d
 
 Looking forward to a **Pawsome** future! 🐾
 
-##### [Support](https://www.ethcatherders.com/donate) & Follow on [X](https://twitter.com/EthCatHerders) | [Warpcast ](https://warpcast.com/ethcatherders) | [YouTube](https://youtube.com/@ethcatherders) | [LinkedIn](https://www.linkedin.com/company/ethcatherders) | [Website](https://www.ethcatherders.com/)
+##### [Support](https://echinstitute.org/donate) & Follow on [X](https://twitter.com/EthCatHerders) | [Warpcast ](https://warpcast.com/ethcatherders) | [YouTube](https://youtube.com/@ethcatherders) | [LinkedIn](https://www.linkedin.com/company/ethcatherders) | [Website](https://echinstitute.org/)

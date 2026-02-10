@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto), 'Roboto', sans-serif;
 }
 
 @layer base {
@@ -68,5 +68,20 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-roboto), 'Roboto', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-antonio), 'Antonio', sans-serif;
+  }
+}
+
+@layer components {
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5,
+  .prose h6 {
+    font-family: var(--font-antonio), 'Antonio', sans-serif;
   }
 }

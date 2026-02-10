@@ -19,7 +19,7 @@ This week's Ethereum updates cover **key protocol advancements, proposal reviews
 - **Upcoming Ethereum Events**: **ETHDenver, ETHPrague, and Devconnect 2025**.  
 
 
-## [Pectra](https://www.ethcatherders.com/upgrades/pectra) (Prague+Electra) Upgrade
+## [Pectra](https://echinstitute.org/upgrades/pectra) (Prague+Electra) Upgrade
 
 - [Pectra Proactive Grant Round](https://esp.ethereum.foundation/pectra-pgr) by ESP
 - **Pectra Retrospective**

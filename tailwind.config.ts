@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			antonio: ['var(--font-antonio)', 'Antonio', 'sans-serif'],
+  			roboto: ['var(--font-roboto)', 'Roboto', 'sans-serif'],
+  		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

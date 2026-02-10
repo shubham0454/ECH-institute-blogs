@@ -68,4 +68,4 @@ Thank you to everyone who participated, tuned in, shared feedback, and supported
 Follow us for more updates on **Twitter**: [ECHInstitute](https://x.com/ECHInstitute)
 
 Support public goods. Strengthen Ethereum.
-Remember to visit our [official website](https://www.ethcatherders.com/), [blogs](https://blog.ethcatherders.com/), [YouTube](https://www.youtube.com/@ethcatherders), [Podcast](https://open.spotify.com/show/7dgxKMkSyy3HWtQW7OfqXA) and follow us on [Twitter](https://x.com/ethcatherders), [LinkedIn](https://www.linkedin.com/company/ethcatherders/) & [Farcaster](https://warpcast.com/ethcatherders) for more updates.
+Remember to visit our [official website](https://echinstitute.org/), [blogs](https://blog.ethcatherders.com/), [YouTube](https://www.youtube.com/@ethcatherders), [Podcast](https://open.spotify.com/show/7dgxKMkSyy3HWtQW7OfqXA) and follow us on [Twitter](https://x.com/ethcatherders), [LinkedIn](https://www.linkedin.com/company/ethcatherders/) & [Farcaster](https://warpcast.com/ethcatherders) for more updates.

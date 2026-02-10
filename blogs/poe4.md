@@ -19,7 +19,7 @@ The Ethereum ecosystem continues to push forward with major protocol upgrades, c
 - **EIP Editing Milestone** – The **50th** EIP Editing Office Hour marked a shift to dedicated **EIP-only** sessions to speed up proposal reviews.  
 - **Public Goods Funding** – **Octant Epoch 7** is open for climate-focused projects, and **Gitcoin Grants 23** is set for March with a revamped funding strategy.  
 
-## [Pectra](https://www.ethcatherders.com/upgrades/pectra) (Prague+Electra) Upgrade
+## [Pectra](https://echinstitute.org/upgrades/pectra) (Prague+Electra) Upgrade
 
 
 ### [All Core Devs - Execution (ACDE) #204](https://github.com/ethereum/pm/issues/1253) (January 30, 2025)

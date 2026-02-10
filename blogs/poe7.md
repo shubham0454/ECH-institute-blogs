@@ -25,7 +25,7 @@ Welcome to the seventh edition. Catch up on the latest updates since our [last e
     - [The song](https://x.com/dannyryan/status/1896299003182289340) 
 
 
-# [Pectra](https://www.ethcatherders.com/upgrades/pectra) (Prague+Electra) Upgrade
+# [Pectra](https://echinstitute.org/upgrades/pectra) (Prague+Electra) Upgrade
 [![Screenshot 2025-03-02 at 8.17.30 PM](https://hackmd.io/_uploads/HyQS7Kzjyl.png)
 ](https://x.com/jameshe_eth/status/1894761100186464338)
 
@@ -156,6 +156,6 @@ Welcome to the seventh edition. Catch up on the latest updates since our [last e
 ### Share your project updates with us
 To add updates, visit our GitHub repository. If you wish to contact the team, join ECH's Discord. Alternatively, you can email us at team@ethcatherders.com by Friday to be added to the next edition of the newsletter scheduled for release on the following Monday.
 
-Remember to visit our [official website](https://www.ethcatherders.com/), [blogs](https://blog.ethcatherders.com/), [YouTube](https://www.youtube.com/@ethcatherders), [Podcast](https://open.spotify.com/show/7dgxKMkSyy3HWtQW7OfqXA) and follow us on [Twitter](https://x.com/ethcatherders), [LinkedIn](https://www.linkedin.com/company/ethcatherders/) & [Farcaster](https://warpcast.com/ethcatherders) for more updates.
+Remember to visit our [official website](https://echinstitute.org/), [blogs](https://blog.ethcatherders.com/), [YouTube](https://www.youtube.com/@ethcatherders), [Podcast](https://open.spotify.com/show/7dgxKMkSyy3HWtQW7OfqXA) and follow us on [Twitter](https://x.com/ethcatherders), [LinkedIn](https://www.linkedin.com/company/ethcatherders/) & [Farcaster](https://warpcast.com/ethcatherders) for more updates.
 
 ## Stay Curious, Stay Connected and Keep Purring 🐾
