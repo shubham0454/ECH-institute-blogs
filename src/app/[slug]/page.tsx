@@ -272,18 +272,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       />
       <div className='flex flex-col min-h-screen'>
         {/* SEO: Semantic HTML5 main element */}
-        <main className='flex flex-col w-full max-w-4xl mx-auto mt-12'>
+        <main className='flex flex-col w-full max-w-4xl mx-auto mt-4 sm:mt-6 md:mt-8 lg:mt-12 px-4 sm:px-6 md:px-8'>
           {/* SEO: Semantic navigation element */}
-          <nav aria-label="Breadcrumb navigation">
+          <nav aria-label="Breadcrumb navigation" className="mb-4 sm:mb-6">
             <Link href='/' className='text-blue-600 hover:text-blue-700' aria-label="Return to blog homepage">
-              <div className='flex items-center gap-2'>
+              <div className='flex items-center gap-2 text-sm sm:text-base'>
                 <ArrowLeftIcon className='w-4 h-4' aria-hidden="true" />
                 <span>Back to all blogs</span>
               </div>
             </Link>
           </nav>
           {frontmatter.image && (
-            <div className="relative w-full mt-6 rounded-lg bg-gray-100 dark:bg-gray-800 overflow-hidden">
+            <div className="relative w-full mt-4 sm:mt-5 md:mt-6 rounded-lg bg-gray-100 dark:bg-gray-800 overflow-hidden">
               {frontmatter.image.includes('ipfs.io') || frontmatter.image.includes('/ipfs/') ? (
                 <div className="relative w-full aspect-video">
                   <IPFSImage
@@ -329,13 +329,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             </div>
           )}
           {/* SEO: Semantic HTML5 article element */}
-          <article className='w-full mt-6' itemScope itemType="https://schema.org/BlogPosting">
+          <article className='w-full mt-4 sm:mt-5 md:mt-6' itemScope itemType="https://schema.org/BlogPosting">
             {/* SEO: Semantic header element */}
-            <header>
-              <h1 className='text-5xl font-bold mb-2 font-antonio' itemProp="headline">
+            <header className="mb-4 sm:mb-5 md:mb-6">
+              <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-4 font-antonio leading-tight' itemProp="headline">
                 {frontmatter.title}
               </h1>
-              <p className='text-sm text-gray-500 mb-6'>
+              <p className='text-xs sm:text-sm text-gray-500 mb-4 sm:mb-5 md:mb-6'>
                 Written by{' '}
                 <span itemProp="author" itemScope itemType="https://schema.org/Person">
                   <span itemProp="name">{frontmatter.author}</span>
@@ -348,7 +348,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             </header>
             {/* SEO: Article body with proper semantic markup */}
             <div 
-              className='prose prose-slate max-w-none' 
+              className='prose prose-slate max-w-none prose-sm sm:prose-base md:prose-lg prose-headings:font-antonio prose-p:leading-relaxed prose-img:rounded-lg prose-img:my-4 sm:prose-img:my-6' 
               itemProp="articleBody"
               dangerouslySetInnerHTML={{ __html: String(htmlContent) }} 
             />

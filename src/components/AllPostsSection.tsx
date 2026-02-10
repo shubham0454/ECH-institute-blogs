@@ -61,26 +61,26 @@ export function AllPostsSection({ posts, currentPage = 1 }: AllPostsSectionProps
   };
 
   return (
-    <section>
+    <section className="mt-6 sm:mt-8 md:mt-10">
       {/* Header with title, search, and pagination */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-        <h2 className="text-2xl font-bold font-antonio">All Posts</h2>
-        <div className="flex items-center gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-4 sm:mb-5 md:mb-6">
+        <h2 className="text-xl sm:text-2xl font-bold font-antonio">All Posts</h2>
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
           {/* Search Input */}
-          <div className="relative flex-1 sm:flex-initial sm:w-64">
+          <div className="relative flex-1 sm:flex-initial sm:w-56 md:w-64">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
             <input
               type="text"
               placeholder="Search posts..."
               value={searchQuery}
               onChange={handleSearchChange}
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full pl-10 pr-4 py-2 text-sm sm:text-base border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           
           {/* Pagination Controls */}
           {totalPages > 1 && (
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 justify-center sm:justify-start">
               <button
                 onClick={() => handlePageChange(page - 1)}
                 disabled={page === 1}
@@ -89,7 +89,7 @@ export function AllPostsSection({ posts, currentPage = 1 }: AllPostsSectionProps
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
-              <span className="text-sm text-gray-600 dark:text-gray-400 px-2">
+              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 px-2 whitespace-nowrap">
                 Page {page} of {totalPages}
               </span>
               <button
@@ -107,7 +107,7 @@ export function AllPostsSection({ posts, currentPage = 1 }: AllPostsSectionProps
 
       {/* Posts Grid - Horizontal layout */}
       {paginatedPosts.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
           {paginatedPosts.map(({ slug, frontmatter }) => (
             <Link
               key={slug}
@@ -152,22 +152,22 @@ export function AllPostsSection({ posts, currentPage = 1 }: AllPostsSectionProps
                   )}
                 </div>
               )}
-              <div className="p-4 flex flex-col flex-grow">
-                <p className="text-gray-600 dark:text-gray-400 text-xs mb-2">
+              <div className="p-3 sm:p-4 flex flex-col flex-grow">
+                <p className="text-gray-600 dark:text-gray-400 text-xs mb-1.5 sm:mb-2">
                   {frontmatter.date.toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'short',
                     day: 'numeric',
                   })}
                 </p>
-                <h3 className="text-lg font-semibold mb-2 font-antonio overflow-hidden text-ellipsis" style={{
+                <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3 font-antonio overflow-hidden text-ellipsis leading-tight" style={{
                   display: '-webkit-box',
                   WebkitLineClamp: 2,
                   WebkitBoxOrient: 'vertical',
                 }}>
                   {frontmatter.title}
                 </h3>
-                <div className="text-gray-600 dark:text-gray-400 text-sm mt-auto">
+                <div className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm mt-auto">
                   {frontmatter.author}
                 </div>
               </div>
@@ -182,16 +182,17 @@ export function AllPostsSection({ posts, currentPage = 1 }: AllPostsSectionProps
 
       {/* Pagination at bottom (optional, for better UX) */}
       {totalPages > 1 && (
-        <div className="flex justify-center items-center gap-2 mt-8">
+        <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 mt-6 sm:mt-8">
           <button
             onClick={() => handlePageChange(page - 1)}
             disabled={page === 1}
-            className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            className="px-3 sm:px-4 py-1.5 sm:py-2 text-sm sm:text-base rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
           >
-            <ChevronLeft className="w-4 h-4 inline mr-1" />
-            Previous
+            <ChevronLeft className="w-3.5 h-3.5 sm:w-4 sm:h-4 inline mr-1" />
+            <span className="hidden sm:inline">Previous</span>
+            <span className="sm:hidden">Prev</span>
           </button>
-          <div className="flex gap-1">
+          <div className="flex gap-1 sm:gap-2 flex-wrap justify-center">
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => {
               // Show first page, last page, current page, and pages around current
               if (
@@ -203,7 +204,7 @@ export function AllPostsSection({ posts, currentPage = 1 }: AllPostsSectionProps
                   <button
                     key={pageNum}
                     onClick={() => handlePageChange(pageNum)}
-                    className={`px-3 py-2 rounded-lg border transition-colors ${
+                    className={`px-2.5 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base rounded-lg border transition-colors ${
                       pageNum === page
                         ? 'bg-blue-500 text-white border-blue-500'
                         : 'border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700'
@@ -213,7 +214,7 @@ export function AllPostsSection({ posts, currentPage = 1 }: AllPostsSectionProps
                   </button>
                 );
               } else if (pageNum === page - 2 || pageNum === page + 2) {
-                return <span key={pageNum} className="px-2">...</span>;
+                return <span key={pageNum} className="px-1 sm:px-2 text-sm">...</span>;
               }
               return null;
             })}
@@ -221,10 +222,11 @@ export function AllPostsSection({ posts, currentPage = 1 }: AllPostsSectionProps
           <button
             onClick={() => handlePageChange(page + 1)}
             disabled={page === totalPages}
-            className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            className="px-3 sm:px-4 py-1.5 sm:py-2 text-sm sm:text-base rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
           >
-            Next
-            <ChevronRight className="w-4 h-4 inline ml-1" />
+            <span className="hidden sm:inline">Next</span>
+            <span className="sm:hidden">Next</span>
+            <ChevronRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 inline ml-1" />
           </button>
         </div>
       )}

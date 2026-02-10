@@ -13,7 +13,27 @@ const frontmatterSchema = z
     // gray-matter (thru js-yaml) parses date-looking strings into Date objects
     // see: https://github.com/jonschlinkert/gray-matter/issues/62
     date: z.coerce.date(),
-    image: z.string().url().optional(),
+    // Accept either a full URL or a relative path starting with /
+    image: z
+      .string()
+      .optional()
+      .refine(
+        (val) => {
+          if (!val) return true; // Optional field
+          // Allow relative paths starting with /
+          if (val.startsWith('/')) return true;
+          // Allow full URLs
+          try {
+            new URL(val);
+            return true;
+          } catch {
+            return false;
+          }
+        },
+        {
+          message: "Image must be a valid URL or a relative path starting with /",
+        }
+      ),
   })
   .passthrough(); // Allow additional properties
 

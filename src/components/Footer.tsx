@@ -12,67 +12,72 @@ import { Button } from "./ui/button";
 
 export function Footer() {
   return (
-    <footer className="w-full">
-      <div className="max-w-4xl mx-auto py-2 px-4 flex justify-end gap-2">
-        <Button variant="outline" className="rounded-full">
+    <footer className="w-full mt-8 sm:mt-12 md:mt-16">
+      <div className="max-w-4xl mx-auto py-3 sm:py-4 px-4 sm:px-6 md:px-8 flex flex-wrap justify-center sm:justify-end gap-2 sm:gap-3">
+        <Button variant="outline" className="rounded-full text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2">
           <Link 
             href="/feed.xml" 
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2"
+            className="flex items-center gap-1.5 sm:gap-2"
           >
-            <BsRssFill className="h-4 w-4" />
-            RSS Feed
+            <BsRssFill className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+            <span className="hidden xs:inline">RSS Feed</span>
+            <span className="xs:hidden">RSS</span>
           </Link>
         </Button>
-        <Button variant="outline" className="rounded-full">
+        <Button variant="outline" className="rounded-full text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2">
           <Link 
             href="https://github.com/echinstitute/blog" 
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2"
+            className="flex items-center gap-1.5 sm:gap-2"
           >
-            <BsGithub className="h-4 w-4" />
-            Edit on GitHub
+            <BsGithub className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+            <span className="hidden sm:inline">Edit on GitHub</span>
+            <span className="sm:hidden">GitHub</span>
           </Link>
         </Button>
       </div>
       <div className="w-full border-t">
-        <div className="max-w-4xl mx-auto py-8 px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex flex-col items-center md:items-start">
-              <Link href="https://echinstitute.org" className="text-lg font-semibold hover:text-primary">
+        <div className="max-w-4xl mx-auto py-6 sm:py-8 px-4 sm:px-6 md:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6">
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+              <Link href="https://echinstitute.org" className="text-base sm:text-lg font-semibold hover:text-primary mb-1 sm:mb-2">
                 ECH Institute
               </Link>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xs sm:text-sm text-muted-foreground max-w-md">
                 Herding Knowledge, Building Community, Homesteading Ethereum!
               </p>
             </div>
             
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3 sm:gap-4 flex-wrap justify-center">
               <Link 
                 href="https://echinstitute.org" 
-                className="text-muted-foreground hover:text-primary"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="ECH Institute Website"
               >
-                <BsGlobe className="h-5 w-5" />
+                <BsGlobe className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
               <Link 
                 href="https://x.com/ECHInstitute" 
-                className="text-muted-foreground hover:text-primary"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Twitter"
               >
-                <BsTwitterX className="h-5 w-5" />
+                <BsTwitterX className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
               <Link 
                 href="https://farcaster.xyz/ethcatherders" 
-                className="text-muted-foreground hover:text-primary"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Farcaster"
               >
-                <svg width="24" height="24" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path 
                     d="M257.778 155.556H742.222V844.445H671.111V528.889H670.414C662.554 441.677 589.258 373.333 500 373.333C410.742 373.333 337.446 441.677 329.586 528.889H328.889V844.445H257.778V155.556Z" 
                     fill="currentColor"
@@ -89,43 +94,48 @@ export function Footer() {
               </Link>
               <Link 
                 href="https://github.com/echinstitute" 
-                className="text-muted-foreground hover:text-primary"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
-                <BsGithub className="h-5 w-5" />
+                <BsGithub className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
               <Link 
                 href="https://www.youtube.com/@echinstitute" 
-                className="text-muted-foreground hover:text-primary"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="YouTube"
               >
-                <BsYoutube className="h-5 w-5" />
+                <BsYoutube className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
               <Link 
                 href="https://www.reddit.com/r/ethcatherders" 
-                className="text-muted-foreground hover:text-primary"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Reddit"
               >
-                <BsReddit className="h-5 w-5" />
+                <BsReddit className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
               <Link 
                 href="https://www.linkedin.com/company/ethcatherders" 
-                className="text-muted-foreground hover:text-primary"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
-                <BsLinkedin className="h-5 w-5" />
+                <BsLinkedin className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
               <Link 
                 href="/feed.xml" 
-                className="text-muted-foreground hover:text-primary"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="RSS Feed"
               >
-                <BsRssFill className="h-5 w-5" />
+                <BsRssFill className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </div>
           </div>

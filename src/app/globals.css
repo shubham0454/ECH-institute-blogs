@@ -84,4 +84,50 @@ body {
   .prose h6 {
     font-family: var(--font-antonio), 'Antonio', sans-serif;
   }
+  
+  /* Responsive typography utilities */
+  .prose {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+  
+  .prose p {
+    @apply mb-4 sm:mb-5 md:mb-6;
+  }
+  
+  .prose h1 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 md:mb-5;
+  }
+  
+  .prose h2 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-2 sm:mb-3 md:mb-4;
+  }
+  
+  .prose h3 {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2 sm:mb-3;
+  }
+  
+  .prose img {
+    @apply my-4 sm:my-5 md:my-6 rounded-lg;
+  }
+  
+  .prose ul,
+  .prose ol {
+    @apply mb-4 sm:mb-5 md:mb-6 pl-4 sm:pl-6;
+  }
+  
+  .prose li {
+    @apply mb-2 sm:mb-3;
+  }
+  
+  .prose code {
+    @apply text-xs sm:text-sm;
+  }
+  
+  .prose pre {
+    @apply p-3 sm:p-4 md:p-5 mb-4 sm:mb-5 md:mb-6 overflow-x-auto;
+  }
+  
+  .prose blockquote {
+    @apply pl-4 sm:pl-6 border-l-2 sm:border-l-4 my-4 sm:my-5 md:my-6;
+  }
 }

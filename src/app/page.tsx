@@ -142,21 +142,21 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
-      <div className="p-8 pb-20 gap-16 sm:p-20 font-roboto">
+      <div className="px-4 py-6 pb-16 sm:px-6 sm:py-8 md:px-8 md:py-12 lg:px-12 lg:py-16 xl:px-20 xl:py-20 font-roboto">
         {/* SEO: Semantic HTML5 main element */}
         <main className="max-w-4xl mx-auto">
           {/* SEO: Semantic header element */}
-          <header className="mb-16 text-center">
-            <h1 className="text-4xl font-bold mb-4 font-antonio">ECH Institute Blog</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+          <header className="mb-8 sm:mb-12 md:mb-16 text-center">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3 md:mb-4 font-antonio">ECH Institute Blog</h1>
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 px-2">
               Official Blog of the ECH Institute
             </p>
           </header>
 
         {/* SEO: Semantic section element for latest posts */}
-        <section className="mb-16" aria-label="Latest blog posts">
-          <h2 className="text-2xl font-bold mb-6 font-antonio">Latest Posts</h2>
-          <div className="grid gap-6 md:grid-cols-2">
+        <section className="mb-8 sm:mb-12 md:mb-16" aria-label="Latest blog posts">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-5 md:mb-6 font-antonio">Latest Posts</h2>
+          <div className="grid gap-4 sm:gap-5 md:gap-6 md:grid-cols-2">
             {posts.slice(0, 4).map(({ slug, frontmatter }) => (
               <Link 
                 key={slug}
@@ -164,7 +164,7 @@ export default async function Home() {
                 className="block rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors"
               >
                 {frontmatter.image && (
-                  <div className="relative w-full aspect-video mb-4 overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+                  <div className="relative w-full aspect-video mb-3 sm:mb-4 overflow-hidden rounded-t-lg bg-gray-100 dark:bg-gray-800">
                     {frontmatter.image.includes('ipfs.io') || frontmatter.image.includes('/ipfs/') ? (
                       <IPFSImage
                         src={frontmatter.image}
@@ -201,20 +201,20 @@ export default async function Home() {
                     )}
                   </div>
                 )}
-                <div className="px-6 pb-4 flex flex-col justify-between">
+                <div className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 flex flex-col justify-between">
                   <div>
-                    <p className="text-gray-600 dark:text-gray-400 text-xs">
+                    <p className="text-gray-600 dark:text-gray-400 text-xs mb-1 sm:mb-2">
                       {frontmatter.date.toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'short',
                         day: 'numeric',
                       })}
                     </p>
-                    <h3 className="text-xl font-semibold mb-2 font-antonio">
+                    <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2 sm:mb-3 font-antonio leading-tight">
                       {frontmatter.title}
                     </h3>
                   </div>
-                  <div className="text-gray-600 dark:text-gray-400 text-sm">
+                  <div className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">
                     {frontmatter.author}
                   </div>
                 </div>
