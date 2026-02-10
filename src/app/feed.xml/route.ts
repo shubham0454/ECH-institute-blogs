@@ -22,7 +22,7 @@ export async function GET(request: Request) {
     id: siteUrl,
     link: siteUrl,
     language: "en",
-    favicon: `${siteUrl}/favicon.ico`,
+    favicon: `${siteUrl}/favicon.svg`,
     copyright: `${new Date().getFullYear()}, ECH Institute, Inc.`,
     updated: posts.length > 0 ? posts[0].frontmatter.date : new Date(),
     feedLinks: {
